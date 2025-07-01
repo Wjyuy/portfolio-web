@@ -2,7 +2,7 @@
   {
     "id": "project-1",
     "title": "ShoFriend",
-    "description": "쇼프렌은 메신저,쇼핑몰을 합친 상품 판매 웹사이트입니다.",
+    "description": "메신저,쇼핑몰을 합친 상품 판매 웹사이트입니다.",
     "goals": [
       "친구와 함께 쇼핑할때 메신저와 쇼핑 앱을 계속해서 오가야 하는데, 두 가지가 분리된 환경에서는 흐름이 끊기고 불편하다고 생각했습니다.",
       "두 애플리케이션을 합쳐 실시간 채팅, 친구 추천 시스템 등의 도입으로 사용자 체류 시간을 증가시켜 구매 전환율을 극대화 시키는것을 목표로 하는 프로젝트입니다."
@@ -25,10 +25,14 @@
       { "url": "/images/projects/portfolio1/checkout.png", "caption": "결제 페이지" }
     ],
     "contributions": {
+      "score" : 40,
       "role": "팀장",
       "responsibilities": [
-        "기획, 설계, 개발 전 과정 총괄",
-        "UI/UX 디자인 및 구현",
+        "하루 단위의 스프린트 계획 및 회고 주도",
+        "칸반보드를 이용한 전체 일정 관리 및 진행 상황 모니터링",
+        "notion 활용한 페이지 기획, figma 사용한 화면 설계, 개발 전 과정 총괄",
+        "카카오페이 API 결제 시스템 연동 구현",
+        "친구 추천 구매 알고리즘 고안 및 제작",
         "백엔드 및 프론트엔드 통합"
       ]
     },
@@ -45,15 +49,85 @@
         "result": "서버에서 검증함으로써 요청의 무결성 확보"
       },
       {
-        "problem": "Tailwind CSS 다크 모드 적용 시 하이드레이션 오류 발생",
-        "solution": "`useEffect`를 사용하여 클라이언트에서 테마 상태를 초기화하고, `html` 태그에 `dark` 클래스를 직접 토글하는 방식으로 해결",
-        "result": "클라이언트-서버 간 불일치 없이 다크 모드 원활하게 동작"
+        "problem": "RestController 사용한 단일 상품 결제 로직 데이터 전송 방식의 비효율성 문제 발생",
+        "solution": "POST 요청의 Body에 담아 객체 배열 형태로 전송하고 서버에서 배열을 파싱, 상품을 조회 하여 일괄 결제 처리 로직 구현",
+        "result": "요구사항 변화에 유연하게 대응할 수 있는 데이터 전송 및 API 설계의 중요성 인식"
+      },
+      {
+        "problem": "Legacy -> Boot 마이그레이션 과정에서 UUID 기반 상품 CRUD 구현 시, 기존 데이터베이스와의 호환성 문제 발생",
+        "solution": "서비스 계층에서 UUID 생성 및 할당 로직을 추가",
+        "result": "기존 상품 ID를 UUID로 변환하고 새로운 상품 생성 시 UUID를 자동할당하여 데이터베이스와의 호환성 유지"
       }
     ],
     "links": {
       "github": "https://github.com/Wjyuy/ShoFriend_Final",
-      "demo": "https://your-portfolio.vercel.app",
-      "article": "https://your-blog.com/portfolio-post"
+      "demo": "https://your-portfolio.vercel.app"
+    }
+  },
+  {
+    "id": "project-2",
+    "title": "Recall Center",
+    "description": "쇼프렌은 메신저,쇼핑몰을 합친 상품 판매 웹사이트입니다.",
+    "goals": [
+      "친구와 함께 쇼핑할때 메신저와 쇼핑 앱을 계속해서 오가야 하는데, 두 가지가 분리된 환경에서는 흐름이 끊기고 불편하다고 생각했습니다.",
+      "두 애플리케이션을 합쳐 실시간 채팅, 친구 추천 시스템 등의 도입으로 사용자 체류 시간을 증가시켜 구매 전환율을 극대화 시키는것을 목표로 하는 프로젝트입니다.",
+      "벤치마킹 : https://www.car.go.kr/home/main.do"
+    ],
+    "period": "2025.05.07 - 2025.05.14",
+    "status": "Completed",
+    "features": [
+      "AJAX 기반 비동기 방식으로 매끄럽고 빠른 사용자 경험 제공",
+      "WebSocket을 이용한 실시간 채팅 지원",
+      "친구 추천 시스템을 통한 사용자 맞춤형 상품 추천 알고리즘 구현",
+      "구매자,판매자에 따른 페이지 레이아웃 차별화",
+      "UUID를 적용한 상품 CRUD 구축",
+      "카카오페이 API 를 이용한 결제 시스템 연동"
+    ],
+    "screenshots": [
+      { "url": "/images/projects/portfolio1/portfoliomain.png", "caption": "메인 페이지" },
+      { "url": "/images/projects/portfolio1/portfoliodatail.png", "caption": "상세 페이지" },
+      { "url": "/images/projects/portfolio1/portfoliochat.png", "caption": "채팅" },
+      { "url": "/images/projects/portfolio1/cart.png", "caption": "장바구니" },
+      { "url": "/images/projects/portfolio1/checkout.png", "caption": "결제 페이지" }
+    ],
+    "contributions": {
+      "score" : 40,
+      "role": "팀장",
+      "responsibilities": [
+        "하루 단위의 스프린트 계획 및 회고 주도",
+        "칸반보드를 이용한 전체 일정 관리 및 진행 상황 모니터링",
+        "notion 활용한 페이지 기획, figma 사용한 화면 설계, 개발 전 과정 총괄",
+        "카카오페이 API 결제 시스템 연동 구현",
+        "친구 추천 구매 알고리즘 고안 및 제작",
+        "백엔드 및 프론트엔드 통합"
+      ]
+    },
+    "technologies": {
+      "frontend": ["JavaScript"],
+      "backend": ["Java 17", "Spring Boot", "JSP & Servlet","Tomcat","Gradle"],
+      "database": ["MySQL"],
+      "deployment": [""]
+    },
+    "troubleshooting": [
+      {
+        "problem": "POST 전송 로직에서 CSRF 공격 방지 미비로 인한 보안 취약점 발견",
+        "solution": "Spring Security의 CSRF 방어 기능을 도입하여, 결제 요청 시 서버에서 발급한 CSRF 토큰을 클라이언트(쿠키 또는 HTML 숨김 필드)에 전달하고, 클라이언트는 해당 토큰을 요청 헤더에 포함하여 서버로 전송하도록 구현",
+        "result": "서버에서 검증함으로써 요청의 무결성 확보"
+      },
+      {
+        "problem": "RestController 사용한 단일 상품 결제 로직 데이터 전송 방식의 비효율성 문제 발생",
+        "solution": "POST 요청의 Body에 담아 객체 배열 형태로 전송하고 서버에서 배열을 파싱, 상품을 조회 하여 일괄 결제 처리 로직 구현",
+        "result": "요구사항 변화에 유연하게 대응할 수 있는 데이터 전송 및 API 설계의 중요성 인식"
+      },
+      {
+        "problem": "Legacy -> Boot 마이그레이션 과정에서 UUID 기반 상품 CRUD 구현 시, 기존 데이터베이스와의 호환성 문제 발생",
+        "solution": "서비스 계층에서 UUID 생성 및 할당 로직을 추가",
+        "result": "기존 상품 ID를 UUID로 변환하고 새로운 상품 생성 시 UUID를 자동할당하여 데이터베이스와의 호환성 유지"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/Wjyuy/ShoFriend_Final",
+      "demo": "https://your-portfolio.vercel.app"
     }
   },
   {

@@ -19,7 +19,6 @@ export interface Profile {
 
 export interface Skill {
   name: string;
-  // 이곳을 수정합니다: '1 | 2 | 3 | 4 | 5' 대신 'number'
   level: number;
   icon?: string;
 }
@@ -55,6 +54,7 @@ export interface Project {
     caption: string;
   }[];
   contributions?: {
+    score: number;
     role: string;
     responsibilities: string[];
   };

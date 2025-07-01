@@ -203,7 +203,7 @@ const ProjectsSection = () => {
 
                 {selectedProject.contributions && (
                   <div>
-                    <h4 className="text-lg font-semibold mb-2 text-slate-900 dark:text-gray-50">기여</h4>
+                    <h4 className="text-lg font-semibold mb-2 text-slate-900 dark:text-gray-50">기여도 : {selectedProject.contributions.score} / 100 </h4>
                     <p className="text-slate-600 dark:text-gray-300 mb-1">
                       역할: {selectedProject.contributions.role}
                     </p>

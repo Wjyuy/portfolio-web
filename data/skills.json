@@ -2,18 +2,18 @@
   {
     "category": "Frontend",
     "items": [
-      { "name": "JavaScript", "icon": "/images/tech-icons/javascript.svg", "level": 4 },
-      { "name": "Next.js", "icon": "/images/tech-icons/next.js.svg", "level": 3 },
-      { "name": "React", "icon": "/images/tech-icons/react.svg", "level": 3 },
-      { "name": "TypeScript", "icon": "/images/tech-icons/typescript.svg", "level": 2 }
+      { "name": "JavaScript", "icon": "/images/tech-icons/JavaScript.svg", "level": 4 },
+      { "name": "Next.js", "icon": "/images/tech-icons/Next.js.svg", "level": 3 },
+      { "name": "React", "icon": "/images/tech-icons/React.svg", "level": 3 },
+      { "name": "TypeScript", "icon": "/images/tech-icons/TypeScript.svg", "level": 2 }
     ]
   },
   {
     "category": "Backend",
     "items": [
-      { "name": "Node.js", "icon": "/images/tech-icons/node.js.svg", "level": 4 },
-      { "name": "Java & Spring", "icon": "/images/tech-icons/spring.svg", "level": 3 },
-      { "name": "Python", "icon": "/images/tech-icons/python.svg", "level": 3 }
+      { "name": "Node.js", "icon": "/images/tech-icons/Node.js.svg", "level": 4 },
+      { "name": "Java & Spring", "icon": "/images/tech-icons/Spring.svg", "level": 3 },
+      { "name": "Python", "icon": "/images/tech-icons/Python.svg", "level": 3 }
     ]
   },
   {
@@ -27,17 +27,17 @@
   {
     "category": "DevOps & Cloud",
     "items": [
-      { "name": "Vercel", "icon": "/images/tech-icons/vercel.svg", "level": 4 },
+      { "name": "Vercel", "icon": "/images/tech-icons/Vercel.svg", "level": 4 },
       { "name": "Cloudtype", "icon": "/images/tech-icons/cloud.svg", "level": 4 },
-      { "name": "Docker", "icon": "/images/tech-icons/docker.svg", "level": 3 },
+      { "name": "Docker", "icon": "/images/tech-icons/Docker.svg", "level": 3 },
       { "name": "Firebase ", "icon": "/images/tech-icons/Firebase.svg", "level": 3 }
     ]
   },
   {
     "category": "Tools & Others",
     "items": [
-      { "name": "Git", "icon": "/images/tech-icons/git.svg", "level": 4 },
-      { "name": "Jira", "icon": "/images/tech-icons/jira.svg", "level": 4 },
+      { "name": "Git", "icon": "/images/tech-icons/Git.svg", "level": 4 },
+      { "name": "Jira", "icon": "/images/tech-icons/Jira.svg", "level": 4 },
       { "name": "VS Code", "icon": "/images/tech-icons/VSCode.svg", "level": 4 }
     ]
   }
