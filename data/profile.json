@@ -1,0 +1,27 @@
+{
+  "name": "우주연",
+  "title": "풀스택 개발자",
+  "summary": "협업의 중요성을 잘 아는 풀스택 개발자입니다. 견고한 백엔드 시스템과 매력적인 프론트엔드 인터페이스를 구축하는 데 능숙합니다.",
+  "location": "부산, 대한민국",
+  "email": "chinhave@gmail.com",
+  "social": {
+    "github": "https://github.com/Wjyuy",
+    "linkedin": "https://www.linkedin.com/in/%EC%A3%BC%EC%97%B0-%EC%9A%B0%EC%A3%BC%EC%97%B0-91183b372/",
+    "blog": "https://dnwndus.tistory.com/",
+    "portfolio": "https://your-portfolio.com"
+  },
+  "avatar": "/images/profile/avatar.jpg",
+  "resumeUrl": "/documents/your_resume.pdf",
+  "bio": [
+    "안녕하세요! 신입 풀스택 개발자 우주연입니다. 사용자에게 최고의 경험을 제공하는 웹 애플리케이션을 구축하는 것에 열정을 가지고 있습니다.",
+    "주로 Next.js와 TypeScript를 활용하여 견고한 프론트엔드를 개발하며, Node.js와 다양한 데이터베이스를 사용하여 확장성 있는 백엔드 시스템을 설계하고 구축합니다.",
+    "새로운 기술을 학습하고 적용하는 것을 즐기며, 문제 해결을 통해 성장하는 것을 중요하게 생각합니다. 협업을 통해 더 나은 결과를 만들어내는 것을 목표로 하고 있습니다."
+  ],
+  "details": [
+    { "label": "생년월일", "value": "2002-08-27" },
+    { "label": "이메일", "value": "chinhave@gmail.com" },
+    { "label": "전화번호", "value": "010-2374-0030" },
+    { "label": "거주지", "value": "경남, 대한민국" },
+    { "label": "학력", "value": "동아대학교 전자공학과 졸업" }
+  ]
+}
