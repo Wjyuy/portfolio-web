@@ -8,13 +8,13 @@ import Card from '../ui/Card';
 import Button from '../ui/Button';
 import Modal from '../ui/Modal';
 import ImageModal from '../ui/ImageModal'; 
-import { Project } from '@/types';
+import { SubProject } from '@/types';
 
 // JSON 데이터 임포트
 import projectsData from '@/data/projects.json';
 
 const ProjectsSection = () => {
-  const projects: Project[] = projectsData.map((project: any) => ({
+  const projects: SubProject[] = projectsData.map((project: any) => ({
     ...project,
     status:
       project.status === 'Completed'
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
         ? 'Planned'
         : 'Planned', // fallback to a valid value
   }));
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<SubProject | null>(null);
 
   // 🟢 이미지 확대 모달 상태 추가
   const [imageModalState, setImageModalState] = useState<{
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-16 px-6 bg-slate-50 dark:bg-gray-950 text-slate-800 dark:text-gray-200">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900 dark:text-gray-50">
-          주요 프로젝트
+          사이드 프로젝트
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

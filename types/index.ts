@@ -76,3 +76,39 @@ export interface Project {
     article?: string;
   };
 }
+
+export interface SubProject {
+  id: string;
+  title: string;
+  description: string;
+  goals: string[];
+  period: string;
+  status: 'Completed' | 'In Progress' | 'Planned';
+  features?: string[];
+  screenshots?: {
+    url: string;
+    caption: string;
+  }[];
+  contributions?: {
+    score: number;
+    role: string;
+    responsibilities: string[];
+  };
+  technologies: {
+    frontend?: string[];
+    backend?: string[];
+    database?: string[];
+    deployment?: string[];
+    others?: string[];
+  };
+  troubleshooting?: {
+    problem: string;
+    solution: string;
+    result: string;
+  }[];
+  links: {
+    github?: string;
+    demo?: string;
+    article?: string;
+  };
+}

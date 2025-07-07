@@ -49,20 +49,18 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/' },
   ];
 
   return (
     <header className="bg-white shadow-sm py-4 px-6 md:px-8 lg:px-12 fixed top-0 left-0 w-full z-50
                        dark:bg-gray-900 dark:border-b dark:border-gray-800 dark:shadow-lg"> {/* 다크 모드 스타일 추가 */}
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        {/* 로고 / 사이트명 */}
         <Link href="/" className="text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors
                                    dark:text-gray-50 dark:hover:text-blue-400"> {/* 다크 모드 텍스트 색상 */}
           Wjyuy.dev
         </Link>
 
-        {/* 데스크톱 내비게이션 */}
         <nav className="hidden md:flex items-center space-x-6"> {/* items-center 추가 */}
           {navLinks.map((link) => (
             <Link
@@ -74,7 +72,6 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-          {/* 다크 모드 토글 버튼 (데스크톱) */}
           <Button
             variant="ghost"
             size="md"
@@ -85,9 +82,7 @@ const Header = () => {
           />
         </nav>
 
-        {/* 모바일 메뉴 버튼 및 다크 모드 토글 버튼 */}
         <div className="md:hidden flex items-center space-x-2">
-          {/* 다크 모드 토글 버튼 (모바일) */}
           <Button
             variant="ghost"
             size="md"
@@ -129,17 +124,6 @@ const Header = () => {
                 {link.name}
               </Link>
             ))}
-            <Button
-              variant="primary"
-              size="lg"
-              className="mt-8"
-              onClick={() => {
-                setIsMenuOpen(false);
-                // 여기에 연락처 모달 열기 또는 연락처 페이지로 이동 로직 추가
-              }}
-            >
-              Get in Touch
-            </Button>
           </nav>
         </div>
       )}
