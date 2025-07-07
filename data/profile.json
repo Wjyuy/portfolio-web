@@ -8,14 +8,15 @@
     "github": "https://github.com/Wjyuy",
     "linkedin": "https://www.linkedin.com/in/%EC%A3%BC%EC%97%B0-%EC%9A%B0%EC%A3%BC%EC%97%B0-91183b372/",
     "blog": "https://dnwndus.tistory.com/",
-    "portfolio": "https://your-portfolio.com"
+    "portfolio": "https://portfolio-web-two-omega.vercel.app/"
   },
   "avatar": "/images/profile/avatar.jpg",
   "resumeUrl": "/documents/your_resume.pdf",
   "bio": [
-    "안녕하세요! 신입 풀스택 개발자 우주연입니다. 사용자에게 최고의 경험을 제공하는 웹 애플리케이션을 구축하는 것에 열정을 가지고 있습니다.",
-    "주로 Next.js와 TypeScript를 활용하여 견고한 프론트엔드를 개발하며, Node.js와 다양한 데이터베이스를 사용하여 확장성 있는 백엔드 시스템을 설계하고 구축합니다.",
-    "새로운 기술을 학습하고 적용하는 것을 즐기며, 문제 해결을 통해 성장하는 것을 중요하게 생각합니다. 협업을 통해 더 나은 결과를 만들어내는 것을 목표로 하고 있습니다."
+    "안녕하세요! 신입 풀스택 개발자 우주연입니다.",
+    "주로 Next.js/TypeScript를 활용하여 프론트엔드를 개발하며 Spring Boot/Node.js를 활용한 웹 서비스 구현 및 JSP/Servlet을 활용한 레거시 Java 웹 프로젝트 관리 경험이 있습니다.",
+    "웹 서비스 아키텍처에 대한 탄탄한 이해를 바탕으로 REST API, CRUD 작업, 검색 기능, 그리고 Open API 통합을 개발해 왔습니다.",
+    "새로운 기술을 배우는 것을 즐기며, 학습해야 할 내용을 인지하고, 상황을 분석하며, 목표 달성을 위한 전략을 적용하는 메타인지적 접근 방식을 통해 문제 해결에 임합니다."
   ],
   "details": [
     { "label": "생년월일", "value": "2002-08-27" },
