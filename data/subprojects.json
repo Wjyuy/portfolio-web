@@ -1,0 +1,89 @@
+[  
+  {
+    "id": "project-4",
+    "title": "챌가봇",
+    "description": "NodeJS & discord.js 기반 디스코드 정보 봇으로, 한국 디스코드 공식에 등록되었습니다.",
+    "goals": [
+      "챌가봇은 Discord 서버 사용자들에게 유용한 정보와 기능을 제공하여 커뮤니티 활동을 더욱 풍부하게 만드는 것을 목표로 합니다.",
+      "게임 관련 정보를 넥슨 Open API를 사용해 실시간으로 제공합니다.",
+      "일상적인 계산 및 커뮤니티 내 장부 관리와 같은 실용적인 유틸리티를 통합하여 사용자 경험을 향상시키는것을 목표로 합니다."
+    ],
+    "period": "2025.06.24 - 2025.06.30",
+    "status": "In Progress",
+    "features": [
+      "게임 내 캐릭터의 레벨, 길드, 코디 등 상세 정보를 Discord 채널에서 직접 조회",
+      "새로운 공지사항이 올라올 때마다 설정된 Discord 채널로 자동으로 알림 전송",
+      "사용자 간의 거래 내역을 기록하고 조회, 삭제할 수 있는 간단한 장부 시스템 제공"
+    ],
+    "screenshots": [
+      { "url": "/images/projects/portfolio4/chalgabotmain.png", "caption": "메인 페이지" }
+    ],
+    "contributions": {
+      "score" : 100,
+      "role": "-",
+      "responsibilities": [
+        "Discord.js를 사용한 디스코드 봇 개발",
+        "Vercel을 이용한 배포 & 커스텀 도메인 연결",
+        "넥슨 Open API와의 연동을 위한 HTTP 통신 로직(axios) 구현",
+        "github actions를 활용한 CI/CD구축",
+        "Firebase Firestore를 이용하여 각 Discord 서버로 공지사항 알림을 받을 채널 ID를 저장하고 관리하는 데이터베이스 연동 로직 구현",
+        "사용자의 명령어 입력(장부등록, 장부조회, 장부삭제)을 파싱하고, 이에 따라 데이터베이스에 대한 CRUD(Create, Read, Update, Delete) 작업을 수행하는 로직을 구현"
+      ]
+    },
+    "technologies": {
+      "frontend": ["Javascript","NextJS"],
+      "backend": ["NodeJS"],
+      "database": ["Firebase Firestore"],
+      "deployment": ["Vercel","CloudType","GitHub Actions"]
+    },
+    "troubleshooting": [
+      {
+        "problem": "firebaseConfig 파일에서 API 키가 노출되어 보안 취약점 발생",
+        "solution": "커밋 브랜치를 mixed로 초기화하고 firebaseConfig 파일을 .gitignore에 추가하여 API 키를 보호, Vercel 환경 변수 설정을 통해 API 키를 안전하게 관리",
+        "result": "API 키 노출 방지 및 보안 강화"
+      }
+    ],
+    "links": {
+      "github": "https://github.com/Wjyuy/Chal-Ga-Bot",
+      "demo": "https://xn--o39ay63a9pl.store/",
+      "article": "https://koreanbots.dev/bots/1354793432601591848"
+    }
+  },
+  {
+    "id": "project-5",
+    "title": "maumcheck",
+    "description": "현대 사회에서 사용자에게 정신적 힐링을 제공하고자 기획한 웹 애플리케이션입니다.",
+    "goals": [
+      "스트레스를 받는 현대인이나 정신적 힐링을 원하는 사용자를 대상으로 심리테스트를 통한 현재 감정 상태를 파악하고 맞춤형 힐링 문구 제공합니다.",
+      "재방문율을 높이기 위해 사용자 맞춤형 경험을 제공하고, 힐링 문구 작가가 되어 직접 작성한 문구를 공유할 수 있게 제작예정입니다."
+    ],
+    "period": "2025.07.01 - 2025.07.07",
+    "status": "In Progress",
+    "features": [
+      "심리테스트 형식의 감정 상태 진단",
+      "개인화된 힐링 문구 추천"
+    ],
+    "screenshots": [
+      { "url": "/images/projects/portfolio5/main.png", "caption": "메인 페이지" }
+    ],
+    "contributions": {
+      "score" : 100,
+      "role": "-",
+      "responsibilities": [
+        "프로젝트 셋업 & 기반 작업",
+        "useState/useReducer 사용한 테스트 플로우 상태 관리",
+        "소셜 공유 기능 구현 ",
+        "404 페이지 및 에러 처리"
+      ]
+    },
+    "technologies": {
+      "frontend": ["TypeScript", "NextJS", "App Router"],
+      "database": ["Vercel KV (Redis)"],
+      "deployment": ["Vercel"]
+    },
+    "links": {
+      "github": "https://github.com/Wjyuy/mindcheck",
+      "demo": "https://maumcheck.shop/"
+    }
+  }
+]

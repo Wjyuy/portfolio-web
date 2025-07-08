@@ -11,7 +11,7 @@ import ImageModal from '../ui/ImageModal';
 import { SubProject } from '@/types';
 
 // JSON 데이터 임포트
-import projectsData from '@/data/projects.json';
+import projectsData from '@/data/subprojects.json';
 
 const ProjectsSection = () => {
   const projects: SubProject[] = projectsData.map((project: any) => ({

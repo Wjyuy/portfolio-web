@@ -14,7 +14,7 @@ export default function HomePage() {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
-      {/* <SubProjectsSection /> */}
+      <SubProjectsSection />
     </div>
   );
 }

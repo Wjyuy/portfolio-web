@@ -27,6 +27,11 @@
       { "url": "/images/projects/portfolio3/dark.png", "caption": "다크모드" },
       { "url": "/images/projects/portfolio3/MoodSync_desc.png", "caption": "포스터" }
     ],
+    "video": [
+      { "url": "/images/projects/portfolio3/m1.mp4", "caption": "시연영상 : 메인 기능" },
+      { "url": "/images/projects/portfolio3/m2.mp4", "caption": "시연영상 : 로그인 / 단일컬렉션" },
+      { "url": "/images/projects/portfolio3/m3.mp4", "caption": "시연영상 : 컬렉션 관리" }
+    ],
     "contributions": {
       "score" : 30,
       "role": "팀원",
@@ -67,7 +72,7 @@
     "links": {
       "github": "https://github.com/Wjyuy/MoodSync",
       "demo": "https://mood-sync-41q7vg7mr-wjyuys-projects.vercel.app/",
-      "article": "https://github.com/Wjyuy/MoodSync/blob/main/lib/files/MoodSync_2%EC%B0%A8ppt.pdf"
+      "article": "https://dnwndus.tistory.com/entry/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-NextTensorFlowspringBoot-%EA%B0%90%EC%A0%95-%EA%B8%B0%EB%B0%98-%EC%B6%94%EC%B2%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-MoodSync-%ED%9B%84%EA%B8%B0"
     }
   },
   {
@@ -180,8 +185,7 @@
     "technologies": {
       "frontend": ["JavaScript"],
       "backend": ["Java 17", "Spring Boot", "JSP & Servlet","Tomcat","Gradle"],
-      "database": ["MySQL"],
-      "deployment": [""]
+      "database": ["MySQL"]
     },
     "troubleshooting": [
       {
@@ -201,8 +205,7 @@
       }
     ],
     "links": {
-      "github": "https://github.com/Wjyuy/ShoFriend_Final",
-      "demo": "https://your-portfolio.vercel.app"
+      "github": "https://github.com/Wjyuy/ShoFriend_Final"
     }
   }
   

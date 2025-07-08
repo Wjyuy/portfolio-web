@@ -53,6 +53,10 @@ export interface Project {
     url: string;
     caption: string;
   }[];
+  video?: {
+    url: string;
+    caption: string;
+  }[];
   contributions?: {
     score: number;
     role: string;

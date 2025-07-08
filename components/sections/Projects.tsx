@@ -7,7 +7,8 @@ import { Github, ExternalLink, Newspaper } from 'lucide-react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 import Modal from '../ui/Modal';
-import ImageModal from '../ui/ImageModal'; 
+import ImageModal from '../ui/ImageModal';
+import VideoModal from '../ui/VideoModal';
 import { Project } from '@/types';
 
 // JSON 데이터 임포트
@@ -27,7 +28,6 @@ const ProjectsSection = () => {
   }));
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  // 🟢 이미지 확대 모달 상태 추가
   const [imageModalState, setImageModalState] = useState<{
     isOpen: boolean;
     images: { url: string; caption: string }[];
@@ -38,7 +38,6 @@ const ProjectsSection = () => {
     initialIndex: 0,
   });
 
-  // 🟢 이미지 확대 모달 열기 핸들러
   const openImageModal = (images: { url: string; caption: string }[], initialIndex: number) => {
     setImageModalState({
       isOpen: true,
@@ -47,11 +46,36 @@ const ProjectsSection = () => {
     });
   };
 
-  // 🟢 이미지 확대 모달 닫기 핸들러
   const closeImageModal = () => {
     setImageModalState({
       isOpen: false,
       images: [],
+      initialIndex: 0,
+    });
+  };
+
+  const [videoModalState, setVideoModalState] = useState<{
+    isOpen: boolean;
+    videos: { url: string; caption: string }[];
+    initialIndex: number;
+  }>({
+    isOpen: false,
+    videos: [],
+    initialIndex: 0,
+  });
+
+  const openVideoModal = (videos: { url: string; caption: string }[], initialIndex: number) => {
+    setVideoModalState({
+      isOpen: true,
+      videos,
+      initialIndex,
+    });
+  };
+
+  const closeVideoModal = () => {
+    setVideoModalState({
+      isOpen: false,
+      videos: [],
       initialIndex: 0,
     });
   };
@@ -167,6 +191,33 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                 )}
+                {/* 🟢 비디오 썸네일들을 grid로 표시 */}
+                {selectedProject.video && selectedProject.video.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4"> {/* Grid 컨테이너 추가 */}
+                    {selectedProject.video.map((vid, index) => ( // map 함수로 변경
+                      <div
+                        key={index} // key prop 추가
+                        className="relative aspect-video rounded-lg overflow-hidden bg-slate-200 dark:bg-gray-700 cursor-pointer"
+                        onClick={() => openVideoModal(selectedProject.video!, index)} // 해당 비디오의 인덱스를 전달
+                      >
+                        <video
+                          src={vid.url} // 현재 비디오의 url 사용
+                          autoPlay={false}
+                          muted={true}
+                          loop={true}
+                          className="transition-transform duration-300 hover:scale-105"
+                        >
+                          Your browser does not support the video tag.
+                        </video>
+                        {vid.caption && ( // 현재 비디오의 캡션 사용
+                          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs p-2">
+                            {vid.caption}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-slate-900 dark:text-gray-50">프로젝트 개요</h3>
@@ -259,7 +310,7 @@ const ProjectsSection = () => {
               )}
               {selectedProject.links.article && (
                 <Button variant="secondary" icon={Newspaper} onClick={() => window.open(selectedProject.links.article!, '_blank')}>
-                  docs
+                  article
                 </Button>
               )}
               <Button variant="ghost" onClick={() => setSelectedProject(null)}>
@@ -274,6 +325,13 @@ const ProjectsSection = () => {
           onClose={closeImageModal}
           images={imageModalState.images}
           initialIndex={imageModalState.initialIndex}
+        />
+
+        <VideoModal
+          isOpen={videoModalState.isOpen}
+          onClose={closeVideoModal}
+          videos={videoModalState.videos}
+          initialIndex={videoModalState.initialIndex}
         />
       </div>
     </section>
